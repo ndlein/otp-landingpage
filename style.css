@@ -1,6 +1,9 @@
 body {
     margin: 0 300px;
     font-family: Roboto;
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 header {
@@ -14,6 +17,7 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 8px;
 }
 
 .header-logo {
@@ -88,3 +92,35 @@ h2 {
     height: 180px; 
     width: 180px;
 }
+
+.inspiration {
+    background-color: #E5E7EB; 
+    padding: 80px 80px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter; 
+    font-style: italic;
+    color: #1F2937; 
+}
+
+.attribute {
+    font-weight: bold;
+    text-align: end;
+}
+
+.call-to-action {
+    display: flex; 
+    flex-grow: 1;
+    background-color: #3882F6;
+    color: white;
+    margin: 80px 40px;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center; 
+    color: white;
+    background-color: #1F2937;
+} 
