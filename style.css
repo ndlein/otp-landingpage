@@ -1,5 +1,4 @@
 body {
-    margin: 0 300px;
     font-family: Roboto;
     display: flex; 
     flex-direction: column;
@@ -28,7 +27,6 @@ ul {
 
 .navarea {
     display: flex;
-    padding: 8px 80px;
 }
 
 .header-text {
@@ -41,14 +39,16 @@ ul {
 
 .title {
     font-size: 48px;
+    margin-bottom: 0;
 }
 
 .header-container {
     display: flex;
-    padding: 80px 80px;
     flex-grow: 1;
     gap: 50px;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
 }
 
 button {
@@ -64,45 +64,57 @@ button {
 .subtext {
     font-size: 18px;
     color: #E5E7EB;
+    margin: 0;
+    max-width: 200px;
 }
 
 h2 {
     text-align: center;
-    weight: 900;
+    font-weight: 900;
     font-size: 36px;
 }
 
-.imagebar {
+.main {
+    padding-bottom: 80px;
     display: flex;
-    justify-content: space-evenly;
-    flex-grow: 1;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-title {
+    width: 100%;
 }
 
 .image-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
     text-align: center;
+    padding: 24x;
+    width: calc(25% -48px);
+    box-sizing: border-box;
 }
 
 .square {
     border-style: solid;
     border-color: #3882F6;
-    height: 180px; 
-    width: 180px;
+    height: 100px; 
+    width: 100px;
 }
 
 .inspiration {
     background-color: #E5E7EB; 
-    padding: 80px 80px;
 }
 
 .quote {
     font-size: 36px;
-    font-weight: lighter; 
+    font-weight: 50; 
     font-style: italic;
     color: #1F2937; 
+    padding: 80px 100px;
+    margin: 0;
 }
 
 .attribute {
@@ -115,7 +127,6 @@ h2 {
     flex-grow: 1;
     background-color: #3882F6;
     color: white;
-    margin: 80px 40px;
     flex-direction: column;
 }
 
